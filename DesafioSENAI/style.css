@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+
+    height: 190vh;
+
+    grid-template-rows: 1fr 6fr 6fr 1fr;
+
+    grid-template-areas: 
+    "nav"
+    "main"
+    "section"
+    "footer";
+}
+
+header {
+    position: sticky;
+    z-index: 10;
+    display: flex;
+    top: 0;
+    width: 98.8vw;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #2e2d2ddc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98.8vw;
+}
+
+.logo {
+    width: 12%;
+    height: auto;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.tmnicons {
+    width: 20%;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    color: white;
+}
+
+.direita {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    margin-right: 3%;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+li span {
+    margin-top: 5%;
+}
+
+li .casinha {
+    margin-bottom: 4%;
+}
+
+nav button {
+    width: 35%;
+    height: 35px;
+    background-color: red;
+    border: 0;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: 16px;
+    margin-left: 7%;
+    cursor: pointer;
+}
+
+button span {
+    margin-top: 5px;
+    color: white;
+    margin-left: 5px;
+}
+
+.main {
+    grid-area: main;
+    background-image: url(assets/destaque.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+}
+
+.quadrado {
+    width: 30%;
+    height: 50%;
+    background-color: black;
+    margin-left: 6%;
+    border-radius: 20px;
+    background-color: #ffffffc7;
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 span {
+    color: red;
+}
+
+.acessar {
+    width: 30%;
+    height: 12%;
+    border-radius: 10px;
+    border: 0;
+    background-color: red;
+    color: white;
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.section {
+    grid-area: section;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: 16px;
+}
+
+section img {
+    width: 40%;
+    height: auto;
+    margin: 1%;
+    border-radius: 20px;
+}
+
+section .epc {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #2e2d2ddc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 10%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.escritafooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: 16px;
+    margin-right: 10%;
+    color: white;
+}
+
+.escritafooter h5 {
+    margin: 0;
+    margin-top: 5px;
+}
+
+@media (max-width:768px) {
+    .quadrado {
+        width: 50%;
+        height: 50%;}
+
+    .direita {
+        width: 900%;}
+
+    .section {
+        font-size: 14px;}
+
+    .cadas {
+        font-size: 1rem;
+    }
+
+    section img {
+        width: 60%;
+    }
+}
